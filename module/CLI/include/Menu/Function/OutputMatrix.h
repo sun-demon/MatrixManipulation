@@ -1,0 +1,14 @@
+#ifndef MATRIXMANIPULATION_CLI_MENU_FUNCTION_OUTPUTMATRIX_H
+#define MATRIXMANIPULATION_CLI_MENU_FUNCTION_OUTPUTMATRIX_H
+
+
+#include "Menu/Menu.h"
+
+namespace MatrixManipulation {
+	namespace CLI {
+		void OutputMatrix(Menu*);
+	}
+}
+
+
+#endif //MATRIXMANIPULATION_CLI_MENU_FUNCTION_OUTPUTMATRIX_H

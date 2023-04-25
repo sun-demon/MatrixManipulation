@@ -1,0 +1,13 @@
+#ifndef MATRIXMANIPULATION_FUNCTIONALINTERFACE_IRUNNABLE_H
+#define MATRIXMANIPULATION_FUNCTIONALINTERFACE_IRUNNABLE_H
+
+
+namespace FunctionalInterface {
+	class IRunnable {
+    public:
+		virtual void run() = 0;
+	};
+}
+
+
+#endif //MATRIXMANIPULATION_FUNCTIONALINTERFACE_IRUNNABLE_H
