@@ -23,6 +23,9 @@ add_executable (${EXECUTABLE_NAME}
 	"include/Menu/Function/ResetRow.h"
 		"src/Menu/Function/ResetRow.cpp"
 
+	"include/Menu/Function/ReplaceZeroRows.h"
+		"src/Menu/Function/ReplaceZeroRows.cpp"
+
 	"include/Menu/Function/OutputMatrix.h"
 		"src/Menu/Function/OutputMatrix.cpp"
 )
