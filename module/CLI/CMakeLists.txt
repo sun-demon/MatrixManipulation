@@ -20,6 +20,9 @@ add_executable (${EXECUTABLE_NAME}
 	"include/Menu/Function/CreateMatrix.h"
 		"src/Menu/Function/CreateMatrix.cpp"
 
+	"include/Menu/Function/ResetRow.h"
+		"src/Menu/Function/ResetRow.cpp"
+
 	"include/Menu/Function/OutputMatrix.h"
 		"src/Menu/Function/OutputMatrix.cpp"
 )

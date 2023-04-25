@@ -13,6 +13,7 @@ namespace MatrixManipulation {
 			MatrixMenu(std::initializer_list<Item>);
 
 			const Matrix& getMatrix() const;
+				  Matrix& getMatrix();
 
 			void setMatrix(const Matrix& matrix);
 
