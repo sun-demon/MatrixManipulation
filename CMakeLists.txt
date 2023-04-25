@@ -7,7 +7,7 @@ if (POLICY CMP0141)
   set(CMAKE_MSVC_DEBUG_INFORMATION_FORMAT "$<IF:$<AND:$<C_COMPILER_ID:MSVC>,$<CXX_COMPILER_ID:MSVC>>,$<$<CONFIG:Debug,RelWithDebInfo>:EditAndContinue>,$<$<CONFIG:Debug,RelWithDebInfo>:ProgramDatabase>>")
 endif()
 
-project ("MatrixManipulation" VERSION 0.3.0)
+project ("MatrixManipulation" VERSION 0.4.0)
 
 # Включите пути к общим загологовочным файлам решения (всех проектов)
 include_directories("include")

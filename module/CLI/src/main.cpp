@@ -2,6 +2,7 @@
 #include "Menu/Function/CreateMatrix.h"
 #include "Menu/Function/ResetRow.h"
 #include "Menu/Function/ReplaceZeroRows.h"
+#include "Menu/Function/AccumulateNegativeLowerValues.h"
 #include "Menu/Function/OutputMatrix.h"
 
 using namespace MatrixManipulation::CLI;
@@ -11,6 +12,7 @@ int main() {
         {"Create matrix", CreateMatrix},
         {"Reset row",         ResetRow},
         {"Replace zero rows", ReplaceZeroRows},
+        {"Accumulate negative lower values", AccumulateNegativeLowerValues},
         {"Output matrix", OutputMatrix}
     });
     menu.run();
