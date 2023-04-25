@@ -1,18 +1,14 @@
-﻿# CMakeList.txt: проект CMake для CLI; включите исходный код и определения,
-# укажите здесь логику для конкретного проекта.
-#
-
-# Название проекта
+﻿# Название модуля
 get_filename_component(MODULE_NAME "${CMAKE_CURRENT_LIST_DIR}" NAME)
 
 # Название исполняемого файла
 set(EXECUTABLE_NAME "${PROJECT_NAME}_${MODULE_NAME}")
 
-# Добавьте пути к закоголовочным файлам проекта
+# Путь к закоголовочным файлам модуля
 include_directories("include")
 
-# Добавьте источник в исполняемый файл этого проекта.
-add_executable (EXECUTABLE_NAME  
+# Источники сборки исполняемого файла модуля
+add_executable (${EXECUTABLE_NAME}  
 	"src/main.cpp"
 
 	"include/Menu/Menu.h"
@@ -23,10 +19,12 @@ add_executable (EXECUTABLE_NAME
 
 	"include/Menu/Function/CreateMatrix.h"
 		"src/Menu/Function/CreateMatrix.cpp"
+
+	"include/Menu/Function/OutputMatrix.h"
+		"src/Menu/Function/OutputMatrix.cpp"
 )
 
+# Ограничение стандарта написания кода на C++20 для CMake выше версии 3.12
 if (CMAKE_VERSION VERSION_GREATER 3.12)
-  set_property(TARGET EXECUTABLE_NAME PROPERTY CXX_STANDARD 20)
+  set_property(TARGET ${EXECUTABLE_NAME} PROPERTY CXX_STANDARD 20)
 endif()
-
-# TODO: Добавьте тесты и целевые объекты, если это необходимо.

@@ -1,1 +1,2 @@
-﻿add_subdirectory("CLI")
+﻿# Путь к собираемому модулю
+add_subdirectory("CLI")
