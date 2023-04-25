@@ -20,6 +20,18 @@ add_executable (${EXECUTABLE_NAME}
 	"include/Menu/Function/CreateMatrix.h"
 		"src/Menu/Function/CreateMatrix.cpp"
 
+	"include/Menu/Function/SortRowsBySignature.h"
+		"src/Menu/Function/SortRowsBySignature.cpp"
+
+	"include/Menu/Function/ResetRow.h"
+		"src/Menu/Function/ResetRow.cpp"
+
+	"include/Menu/Function/ReplaceZeroRows.h"
+		"src/Menu/Function/ReplaceZeroRows.cpp"
+
+	"include/Menu/Function/AccumulateNegativeLowerValues.h"
+		"src/Menu/Function/AccumulateNegativeLowerValues.cpp"
+
 	"include/Menu/Function/OutputMatrix.h"
 		"src/Menu/Function/OutputMatrix.cpp"
 )
